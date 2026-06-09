@@ -271,6 +271,118 @@ footer{
 <footer>
     <p>Agro Forte, Futuro Sustentável © 2026</p>
 </footer>
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.eco-box{
+    width:700px;
+    max-width:90%;
+    height:420px;
+    background:white;
+    border-radius:15px;
+    position:relative;
+    overflow:hidden;
+}
+
+.muro{
+    position:absolute;
+    left:50%;
+    top:0;
+    width:15px;
+    height:100%;
+    background:#B0BEC5;
+    transform:translateX(-50%);
+}
+
+.floresta{
+    position:absolute;
+    left:0;
+    top:0;
+    width:50%;
+    height:100%;
+}
+
+.fabrica{
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:50%;
+    text-align:center;
+    font-size:120px;
+}
+
+.arvore{
+    width:55px;
+    height:55px;
+    background:#2E7D32;
+    border-radius:50%;
+    position:absolute;
+}
+
+.arvore::after{
+    content:"";
+    position:absolute;
+    width:8px;
+    height:40px;
+    background:#5D4037;
+    left:50%;
+    top:50px;
+    transform:translateX(-50%);
+}
+
+.arv1{
+    top:60px;
+    left:50px;
+}
+
+.arv2{
+    top:160px;
+    left:130px;
+}
+
+.arv3{
+    top:230px;
+    left:70px;
+}
+
+.arv4{
+    top:110px;
+    left:230px;
+}
+
+.boneco{
+    position:absolute;
+    font-size:35px;
+}
+
+.azul{
+    bottom:30px;
+    left:20px;
+}
+
+.vermelho{
+    bottom:30px;
+    right:20px;
+}
+
+#toco{
+    width:30px;
+    height:15px;
+    background:#6D4C41;
+    border-radius:4px;
+    position:absolute;
+    display:none;
+}
+
+
 
 <script>
 
