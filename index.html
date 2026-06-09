@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Agro Forte - Futuro Sustentável</title>
+
+<style>
+
+:root{
+    --verde-principal:#2e7d32;
+    --verde-claro:#e8f5e9;
+    --verde-secundario:#4caf50;
+    --texto:#222;
+    --fundo:#f4fff4;
+}
+
+.dark-mode{
+    --verde-principal:#81c784;
+    --verde-claro:#1d2b1d;
+    --verde-secundario:#66bb6a;
+    --texto:#f5f5f5;
+    --fundo:#121212;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    transition:0.3s;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--fundo);
+    color:var(--texto);
+    line-height:1.8;
+}
+
+header{
+    background:linear-gradient(
+    135deg,
+    var(--verde-principal),
+    var(--verde-secundario)
+    );
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:2.8rem;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+button{
+    background:var(--verde-principal);
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:30px;
+}
+
+.introducao{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:30px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.dark-mode .introducao{
+    background:#222;
+}
+
+.bloco{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    align-items:center;
+    margin-bottom:50px;
+}
+
+.bloco img{
+    width:100%;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.texto{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+}
+
+.dark-mode .texto{
+    background:#222;
+}
+
+footer{
+    background:var(--verde-principal);
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:800px){
+
+.bloco{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Agro Forte, Futuro Sustentável</h1>
+    <p>O agronegócio como motor da economia e aliado da sustentabilidade.</p>
+</header>
+
+<div class="menu">
+    <button onclick="modoNoturno()">🌙 Modo Noturno</button>
+    <button onclick="aumentarFonte()">🔎 Aumentar Fonte</button>
+    <button onclick="projeto()">🌱 Projeto Pequeno</button>
+</div>
+
+<div class="container">
+
+    <!-- INTRODUÇÃO -->
+    <section class="introducao">
+
+        <h2>O Agro no Brasil</h2>
+
+        <p>
+            O agronegócio é um dos setores mais importantes da economia brasileira.
+            Responsável pela produção de alimentos, geração de empregos e desenvolvimento
+            de diversas regiões do país, o agro contribui significativamente para o
+            crescimento econômico nacional. Além disso, a busca por práticas sustentáveis
+            vem tornando o setor cada vez mais comprometido com a preservação ambiental
+            e com o futuro das próximas gerações.
+        </p>
+
+    </section>
+
+    <!-- IMAGEM 1 -->
+    <section class="bloco">
+
+        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="Plantação">
+
+        <div class="texto">
+            <h2>Importância do Agro no Paraná</h2>
+
+            <p>
+                O Paraná é um dos estados que mais se destacam no agronegócio brasileiro.
+                A produção de soja, milho, trigo e outras culturas gera milhares de empregos,
+                movimenta a economia e fortalece o desenvolvimento regional.
+            </p>
+
+            <p>
+                Além da produção agrícola, o setor impulsiona indústrias, transporte,
+                comércio e exportações, beneficiando toda a sociedade.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- IMAGEM 2 -->
+    <section class="bloco">
+
+        <div class="texto">
+            <h2>Desenvolvimento e Tecnologia</h2>
+
+            <p>
+                A modernização das atividades agrícolas trouxe máquinas mais eficientes,
+                sistemas de irrigação inteligentes e monitoramento por satélite.
+                Essas tecnologias aumentam a produtividade e reduzem desperdícios.
+            </p>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef" alt="Tecnologia agrícola">
+
+    </section>
+
+    <!-- IMAGEM 3 -->
+    <section class="bloco">
+
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399" alt="Meio ambiente">
+
+        <div class="texto">
+            <h2>Produzir sem Destruir</h2>
+
+            <p>
+                Apesar dos benefícios do agronegócio, é fundamental que o crescimento
+                aconteça de forma responsável. O desmatamento e a degradação ambiental
+                podem causar impactos negativos para o clima, a biodiversidade e os
+                recursos naturais.
+            </p>
+
+            <p>
+                Por isso, práticas sustentáveis são essenciais para garantir a produção
+                agrícola sem comprometer o meio ambiente.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- IMAGEM 4 -->
+    <section class="bloco">
+
+        <div class="texto">
+            <h2>Solução Sustentável: EcoLápis Faber-Castell</h2>
+
+            <p>
+                Um excelente exemplo de sustentabilidade é o projeto EcoLápis da
+                Faber-Castell. A empresa mantém áreas de reflorestamento destinadas
+                à produção da madeira utilizada em seus lápis.
+            </p>
+
+            <p>
+                As árvores são cultivadas, manejadas e replantadas continuamente,
+                garantindo matéria-prima renovável e reduzindo impactos ambientais.
+                Esse modelo demonstra como é possível unir produção e preservação.
+            </p>
+        </div>
+
+        <img src="ecolapis.png" alt="Projeto EcoLápis">
+
+    </section>
+
+</div>
+
+<footer>
+    <p>Agro Forte, Futuro Sustentável © 2026</p>
+</footer>
+
+<script>
+
+let tamanho = 100;
+
+function modoNoturno(){
+    document.body.classList.toggle("dark-mode");
+}
+
+function aumentarFonte(){
+    tamanho += 10;
+    document.body.style.fontSize = tamanho + "%";
+}
+
+function projeto(){
+    alert("Projeto Pequeno: EcoLápis - Faber-Castell\n\nEm desenvolvimento.");
+}
+
+</script>
+
+</body>
+</html>
