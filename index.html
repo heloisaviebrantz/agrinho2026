@@ -9,16 +9,16 @@
 <style>
 
 :root{
-    --verde-principal:#2e7d32;
+    --verde-principal:#1B5E20;
     --verde-claro:#e8f5e9;
-    --verde-secundario:#4caf50;
+    --verde-secundario:#2e7d32;
     --texto:#222;
-    --fundo:#f4fff4;
+    --fundo:#f1f8f1;
 }
 
 .dark-mode{
-    --verde-principal:#81c784;
-    --verde-claro:#1d2b1d;
+    --verde-principal:#4caf50;
+    --verde-claro:#1A1A1A;
     --verde-secundario:#66bb6a;
     --texto:#f5f5f5;
     --fundo:#121212;
@@ -32,7 +32,7 @@
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Poppins',sans-serif;
     background:var(--fundo);
     color:var(--texto);
     line-height:1.8;
@@ -50,7 +50,8 @@ header{
 }
 
 header h1{
-    font-size:2.8rem;
+    font-family: 'Great Vibes', cursive;
+    font-size:4rem;
 }
 
 header p{
@@ -138,6 +139,10 @@ footer{
 }
 
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -147,9 +152,15 @@ footer{
 </header>
 
 <div class="menu">
-    <button onclick="modoNoturno()">🌙 Modo Noturno</button>
-    <button onclick="aumentarFonte()">🔎 Aumentar Fonte</button>
-    <button onclick="projeto()">🌱 Projeto Pequeno</button>
+    <button onclick="modoNoturno()">Modo Noturno</button>
+
+    <button onclick="aumentarFonte()">
+        Aumentar Fonte
+    </button>
+
+    <button onclick="abrirProjeto()">
+        Projeto: EcoLápis - Faber-Castell
+    </button>
 </div>
 
 <div class="container">
