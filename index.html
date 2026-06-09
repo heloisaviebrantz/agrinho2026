@@ -397,9 +397,73 @@ function aumentarFonte(){
     document.body.style.fontSize = tamanho + "%";
 }
 
-function projeto(){
-    alert("Projeto Pequeno: EcoLápis - Faber-Castell\n\nEm desenvolvimento.");
+const overlay = document.getElementById("overlay");
+
+function abrirProjeto(){
+    overlay.style.display = "flex";
 }
+
+overlay.addEventListener("click", function(e){
+
+    if(e.target === overlay){
+        overlay.style.display = "none";
+    }
+
+});
+
+
+const azul = document.getElementById("azul");
+const vermelho = document.getElementById("vermelho");
+const toco = document.getElementById("toco");
+
+let arvoreAlvo = document.querySelector(".arv2");
+
+function animarEco(){
+
+    if(overlay.style.display !== "flex"){
+        setTimeout(animarEco,1000);
+        return;
+    }
+
+    azul.style.transition = "2s";
+    azul.style.left = "130px";
+
+    setTimeout(() => {
+
+        arvoreAlvo.style.display = "none";
+
+        toco.style.display = "block";
+        toco.style.left = "145px";
+        toco.style.top = "220px";
+
+    }, 2000);
+
+    setTimeout(() => {
+        azul.style.left = "20px";
+    }, 3000);
+
+    setTimeout(() => {
+        vermelho.style.transition = "2s";
+        vermelho.style.right = "210px";
+    }, 5000);
+
+    setTimeout(() => {
+
+        arvoreAlvo.style.display = "block";
+        toco.style.display = "none";
+
+    }, 7000);
+
+    setTimeout(() => {
+        vermelho.style.right = "20px";
+    }, 8000);
+
+    setTimeout(animarEco,10000);
+}
+
+animarEco();
+;
+
 
 </script>
 
