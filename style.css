@@ -132,3 +132,27 @@ footer{
     max-width: 900px;
     margin: 30px auto;
 }
+
+nav{
+    position: sticky;
+    top:0;
+    z-index:1000;
+
+    background:rgba(27,94,32,0.95);
+
+display:flex;
+    justify-content:center;
+    gap:40px;
+
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#A5D6A7;
+} 
