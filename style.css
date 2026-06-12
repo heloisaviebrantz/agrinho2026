@@ -156,3 +156,34 @@ nav a{
 nav a:hover{
     color:#A5D6A7;
 } 
+
+.hero{
+
+    height:500px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ),
+
+    url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:3rem;
+}
+
+.hero p{
+    font-size:1.3rem;
+} 
