@@ -51,3 +51,33 @@ new Chart(ctx, {
     }
 });
 
+const botaoTopo = document.getElementById("topo");
+
+window.onscroll = function(){
+
+    if(window.scrollY > 300){
+
+        botaoTopo.style.display = "block";
+
+    }
+
+    else{
+
+        botaoTopo.style.display = "none";
+
+    }
+
+};
+
+botaoTopo.onclick = function(){
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+}; 
+
