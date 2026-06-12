@@ -1,4 +1,4 @@
-<script>
+
 
 let tamanho = 100;
 
@@ -10,7 +10,3 @@ function aumentarFonte(){
     tamanho += 10;
     document.body.style.fontSize = tamanho + "%";
 }
-
-
-
-</script>
