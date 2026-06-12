@@ -1,0 +1,133 @@
+<style>
+
+:root{
+    --verde-principal:#1B5E20;
+    --verde-claro:#e8f5e9;
+    --verde-secundario:#2e7d32;
+    --texto:#222;
+    --fundo:#f1f8f1;
+}
+
+.dark-mode{
+    --verde-principal:#4caf50;
+    --verde-claro:#1A1A1A;
+    --verde-secundario:#66bb6a;
+    --texto:#f5f5f5;
+    --fundo:#121212;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    transition:0.3s;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--fundo);
+    color:var(--texto);
+    line-height:1.8;
+}
+
+header{
+    background:linear-gradient(
+    135deg,
+    var(--verde-principal),
+    var(--verde-secundario)
+    );
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-family: 'Great Vibes', cursive;
+    font-size:4rem;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+button{
+    background:var(--verde-principal);
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:30px;
+}
+
+.introducao{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:30px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.dark-mode .introducao{
+    background:#222;
+}
+
+.bloco{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    align-items:center;
+    margin-bottom:50px;
+}
+
+.bloco img{
+    width:100%;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.texto{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+}
+
+.dark-mode .texto{
+    background:#222;
+}
+
+footer{
+    background:var(--verde-principal);
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:800px){
+
+.bloco{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
