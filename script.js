@@ -123,3 +123,21 @@ linksMenu.forEach(link => {
         }
     });
 }); 
+
+const janelaCarbono = document.getElementById("janelaCarbono");
+
+function abrirCarbono(){
+
+    janelaCarbono.style.display = "flex";
+
+}
+
+janelaCarbono.addEventListener("click", function(event){
+
+    if(event.target === janelaCarbono){
+
+        janelaCarbono.style.display = "none";
+
+    }
+
+});
