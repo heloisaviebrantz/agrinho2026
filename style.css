@@ -113,7 +113,8 @@ button:hover{
 .texto{
     background:white;
     padding:25px;
-    border-radius:12px;
+    border-radius:15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .dark-mode .texto{
