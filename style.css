@@ -137,8 +137,8 @@ footer{
 
 }
 #graficoCarbono{
-    max-width: 900px;
-    margin: 30px auto;
+    width:100%; !important
+    height: 500px; !important
 }
 
 nav{
