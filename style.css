@@ -121,6 +121,10 @@ button:hover{
     background:#222;
 }
 
+.dark-mode .grafico {
+    background: #222;
+}
+
 footer{
     background:var(--verde-principal);
     color:white;
