@@ -235,3 +235,21 @@ nav a:hover{
 
     max-width:1000px;
 } 
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+    transition:1s;
+
+}
+
+.reveal.ativo{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+} 

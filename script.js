@@ -81,3 +81,26 @@ botaoTopo.onclick = function(){
 
 }; 
 
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", revelar);
+
+function revelar(){
+
+    reveals.forEach((elemento)=>{
+
+        const alturaJanela = window.innerHeight;
+
+        const topoElemento = elemento.getBoundingClientRect().top;
+
+        if(topoElemento < alturaJanela - 100){
+
+            elemento.classList.add("ativo");
+
+        }
+
+    });
+
+}
+
+revelar(); 
