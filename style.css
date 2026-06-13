@@ -314,6 +314,8 @@ nav a:hover{
 
     justify-content:space-between;
 
+    position: relative;
+
 }
 
 .floresta{
@@ -407,7 +409,9 @@ nav a:hover{
 
     background:#06ecc2;
 
-    right:250px;
+    right: 160px;
+
+    bottom: 90px;
 
     transition: 5s linear;
 }
@@ -417,6 +421,8 @@ nav a:hover{
     background:#ef0909;
 
     right:210px;
+
+    bottom: 90px;
 } 
 
 .fabrica{
