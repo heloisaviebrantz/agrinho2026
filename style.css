@@ -387,3 +387,74 @@ nav a:hover{
     font-size:120px;
 
 } 
+.personagem{
+
+    width:25px;
+
+    height:25px;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    bottom:70px;
+
+}
+
+.azul{
+
+    background:#06ecc2;
+
+    right:250px;
+}
+
+.vermelho{
+
+    background:#ef0909;
+
+    right:210px;
+} 
+
+.fabrica{
+
+    width:40%;
+
+    position:relative;
+
+    height:100%;
+}
+
+.predio{
+
+    width:120px;
+
+    height:100px;
+
+    background:#888;
+
+    position:absolute;
+
+    bottom:50px;
+
+    right:50px;
+
+    border-radius:10px;
+}
+
+.chamine{
+
+    width:30px;
+
+    height:70px;
+
+    background:#666;
+
+    position:absolute;
+
+    left:20px;
+
+    top:-60px;
+
+} 
+
+
