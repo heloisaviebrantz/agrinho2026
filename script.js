@@ -146,9 +146,22 @@ janelaCarbono.addEventListener("click", function(event){
 
 const azul = document.getElementById("azul");
 
-function moverAzul() 
-{
+function moverAzul(){
 
-    azul.style.right = "700px";
+    setInterval(function(){
+
+        if(azul.style.right == "700px"){
+
+            azul.style.right = "160px";
+
+        }
+
+        else{
+
+            azul.style.right = "700px";
+
+        }
+
+    },5000);
 
 } 
