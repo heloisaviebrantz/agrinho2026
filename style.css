@@ -407,14 +407,16 @@ nav a:hover{
 
 .azul{
 
-    background:#06ecc2;
-
-    right: 160px;
-
+     background: #06ecc2;
+    position: absolute;
     bottom: 90px;
+    left: 160px; /* Começa no lado esquerdo */
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    animation: moverAzul 10s linear infinite;
+} 
 
-    transition: 5s linear;
-}
 
 .vermelho{
 
