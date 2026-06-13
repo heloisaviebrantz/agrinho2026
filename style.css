@@ -408,6 +408,8 @@ nav a:hover{
     background:#06ecc2;
 
     right:250px;
+
+    transition: 5s linear;
 }
 
 .vermelho{

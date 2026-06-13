@@ -130,6 +130,8 @@ function abrirCarbono(){
 
     janelaCarbono.style.display = "flex";
 
+    moverAzul ()
+
 }
 
 janelaCarbono.addEventListener("click", function(event){
@@ -141,3 +143,11 @@ janelaCarbono.addEventListener("click", function(event){
     }
 
 });
+
+const azul = document.getElementById("azul");
+
+function moverAzul(){
+
+    azul.style.right = "650px";
+
+} 
