@@ -146,8 +146,9 @@ janelaCarbono.addEventListener("click", function(event){
 
 const azul = document.getElementById("azul");
 
-function moverAzul(){
+function moverAzul() 
+{
 
-    azul.style.right = "650px";
+    azul.style.right = "350px";
 
 } 
