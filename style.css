@@ -426,37 +426,5 @@ nav a:hover{
     height:100%;
 }
 
-.predio{
-
-    width:120px;
-
-    height:100px;
-
-    background:#888;
-
-    position:absolute;
-
-    bottom:50px;
-
-    right:50px;
-
-    border-radius:10px;
-}
-
-.chamine{
-
-    width:30px;
-
-    height:70px;
-
-    background:#666;
-
-    position:absolute;
-
-    left:20px;
-
-    top:-60px;
-
-} 
 
 
