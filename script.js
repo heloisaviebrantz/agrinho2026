@@ -149,6 +149,6 @@ const azul = document.getElementById("azul");
 function moverAzul() 
 {
 
-    azul.style.right = "350px";
+    azul.style.right = "450px";
 
 } 
